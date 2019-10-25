@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://www.tutorialspoint.com/jqueryui/src/autocomplete_method.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <title>jQuery UI Autocomplete functionality</title>
+      <link href="./jquery-ui.css" rel="stylesheet">
+      <script src="./jquery-1.10.2.js.download"></script>
+      <script src="./jquery-ui.js.download"></script>
+      
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            var availableTutorials  =  [
+               "ActionScript",
+               "Boostrap",
+               "C",
+               "C++",
+            ];
+            $( "#automplete-1" ).autocomplete({
+               source: availableTutorials
+            });
+         });
+      </script>
+   <script type="text/javascript" src="./api(7)"></script><script type="text/javascript" src="./int.js.download"></script></head>
+   
+   <body style="">
+      <!-- HTML --> 
+      <div class="ui-widget">
+         <p>Type "a" or "s"</p>
+         <label for="automplete-1">Tags: </label>
+         <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="automplete-1" class="ui-autocomplete-input" autocomplete="off">
+      </div>
+   
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul></body></html>

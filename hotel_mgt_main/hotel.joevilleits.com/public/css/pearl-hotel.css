@@ -1,0 +1,849 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Pearl Restaurant
+Version:	1.0
+Last change:	Initial RELEASED 
+Primary use:	Restaurant and Hotel
+-------------------------------------------------------------------*/
+
+/* google font */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300);
+@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
+
+
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1. body
+2. common Classes
+2. header 
+3. navigation / .navbar
+4. sections
+
+NOTE: Every section is commented before starting.
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body 		:		font-family : ''Source Sans Pro', sans-serif'
+Paragraph	:		font-family : ''Source Sans Pro', sans-serif'
+Input, 
+textarea,
+title	:		font-family : 'Raleway, sans-serif'  +   font-family: 'Tangerine', cursive;
+
+
+# [Headings]
+
+h1,
+.h1 	font-size: 48px
+
+h2,
+.h2     font-size: 42px
+
+h3,
+.h3     font-size: 36px
+
+h4,
+.h4     font-size: 32px
+
+h5,
+.h5     font-size: 28px
+
+h6,
+.h6     font-size: 24px
+
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small   
+		
+		font-size: 20px
+
+-------------------------------------------------------------------*/
+
+
+body{
+	background:#fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:#222;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+
+h1{
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	font-size:48px;
+	text-transform:uppercase; 
+}
+h2{
+	font-weight: 700;
+	font-size:42px;
+	font-family: 'Raleway', sans-serif;
+	color:#222222;
+}
+h3{
+	font-weight: 300;
+	font-size:36px;
+	font-family: 'Raleway', sans-serif;
+}
+h4{
+	
+	font-weight: 600;
+	font-size:32px;
+	font-family: 'Raleway', sans-serif;
+}
+h5{
+	font-weight:700;
+	font-size:28px;
+	font-family: 'Raleway', sans-serif;
+}
+h6{ 
+	font-weight: 600;
+	font-size:24px;
+	font-family: 'Raleway', sans-serif;
+}
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+	font-size:20px;
+	line-height: 27px;
+}
+
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+a .img{
+	border:none;
+
+}
+a{transition: background-color 0.5s ease; transition: color 1s; -webkit-transition: color 1s; -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s;}
+a:hover {transition: background-color 0.5s ease; }
+img{ width:100%;}
+img:hover {transition: background-color 0.5s ease; }
+.clear{
+	clear:both;
+}
+.height5{	height:5px; }
+.height10{	height:10px; }
+.height15{	height:15px; }
+.height20{ 	height:20px; }
+.height25{	height:25px; }
+.height30{	height:30px; }
+.height35{	height:35px; }
+:focus{ outline:none;}
+
+
+
+/*..... HEADER ......*/
+
+.header .logo{ width: 160px; float: left; margin: 14px 0px 0 0; padding: 0 15px;}
+.header .nav{ float:left; margin:0 0 0 0;}
+.header .nav ul li{ float:left;}
+.header .nav ul li a{ color: #141414; text-transform: uppercase; font-weight: 400; font-size: 16px; font-family: 'Raleway', sans-serif; border-left: solid 1px #cccccc; padding: 26px 30px; line-height: 70px;}
+
+
+
+.header .nav ul li:last-child a{ border-right: solid 1px #cccccc;}
+.header .get-touch{ float:right;}
+.header .get-touch li{ float:left;}
+.header .get-touch li a{ text-transform: uppercase; font-size: 18px; padding: 22px 25px; float: left;}
+.header .get-touch li.book-table a{ color:#fff; background:#0a1d3b; font-weight:500; line-height: 26px; font-family: 'Raleway', sans-serif;}
+.header .get-touch li.book-table a span{ float:left;}
+.header .get-touch li.book-table a:hover{background:#022863;}
+.header .get-touch li.book-table i{color:#fff; margin:-2px 0 0 115px; float: right; font-size: 26px;}
+
+.header .get-touch li.contact-no i{ margin: 0px 15px 0 0; float: left; font-size: 26px;}
+.header .get-touch li.contact-no a{ font-size:20px;}
+.header .cart-button{color: #fff; padding: 0 26px; float: left;}
+.header .cart-button i{ color:#fff;    font-size: 34px;    line-height: 70px;}
+.header .shop-bag li.close-bag { cursor: pointer;}
+.header .shop-bag li.close-bag a{ padding:0 26px;}
+.header .shop-bag li.open-bag { background: #fff; display: none; position: absolute; margin: 70px 0 0 0; right: 0; width: 345px; padding:0 20px 20px 20px;    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);}
+.header ul.shop-bag { float: right;}
+.header .shop-bag .num{position: absolute; margin: 12px 0 0 24px; float: right; color: #222; background-color: #fff; border-radius: 100%; width: 20px; height: 20px; top: 0; padding: 2px 0 0 0; font-size: 12px; text-align: center;}
+.header .shop-bag .cart-food{ border-bottom: solid 1px #d1d1d1; float: left; width: 100%; padding: 20px 0 20px 0;}
+.header .shop-bag .cart-food .detail{    float: left;}
+.header .shop-bag .cart-food .detail img{ float:left; width:62px;}
+.header .shop-bag .cart-food .detail .text{    float: left; margin: 0 0 0 15px; width: 190px;}
+.header .shop-bag .cart-food .detail .text a{ text-transform: uppercase; font-weight: 600; font-size: 18px; color: #222;}
+.header .shop-bag .cart-food .detail .text p{ color: #666666; font-size: 14px;}
+.header .shop-bag .cart-food a.cross{float: right; margin: 15px 0 0 0;}
+.header .shop-bag .cart-food a.cross i{font-size: 26px; color: #777;}
+.header .shop-bag .cart-food a.cross i:hover{color: #000;}
+.header .shop-bag .sub-total{ margin: 30px 0 0 0; float: left; width: 100%;}
+.header .shop-bag .sub-total span{ font-size:16px; color:#636363; float: right;}
+.header .shop-bag .sub-total span strong{ color:#222; margin: 0 0 0 8px;}
+.header .shop-bag .sub-total .buttons{    float: left; width: 100%; margin: 14px 0 0 0;}
+.header .shop-bag .sub-total a{ font-size:13px; width: 48%; float: left; border-radius: 5px; text-align: center; color: #fff; text-transform: uppercase; padding: 11px 0;}
+.header .shop-bag .sub-total a.view-cart{ background:#bcbcbc;}
+.header .shop-bag .sub-total a.check-out{ background:#222; float:right;}
+
+
+
+
+
+/*..... HEADER TWO ......*/
+
+.header-two .logo2{ width:158px; float:left; margin:25px 26px 0 0;}
+.header-two .logo-dark{ display:none;}
+.header-two .nav{ float:left;}
+.header-two .nav ul li{ float:left;}
+.header-two .nav ul li a{ color: #fff; text-transform: uppercase; font-weight: 400; font-size:15px; font-family: 'Raleway', sans-serif; padding: 0px 0;
+ margin: 0 14px; line-height: 102px;}
+.header-two .nav ul li.select-item a{ color: #FFFFFF; border-bottom: solid 1px #fff;}
+.header-two .get-touch{ float:right; margin:38px 0 0 0;}
+.header-two .get-touch li{ float:left;}
+.header-two .cont-right{ float:right;}
+.header-two .social-icons{ float:left; margin:40px 8px 0 0;}
+.header-two .social-icons li{ float:left; margin: 0 5px;}
+.header-two .social-icons li a{color:#fff; font-size:20px;}
+.header-two .social-icons li a:hover{color:#e9b947;}
+.header-two .get-touch li a{ text-transform: uppercase; font-size: 18px; padding:0px 18px; float: left;}
+.header-two .get-touch li.book-table a{ color:#fff; background:#0a1d3b; font-weight:500; line-height: 26px; font-family: 'Raleway', sans-serif;}
+.header-two .get-touch li.book-table a span{ float:left;}
+.header-two .get-touch li.book-table a:hover{background:#022863;}
+.header-two .get-touch li.book-table i{color:#fff; margin:-2px 0 0 115px; float: right; font-size: 26px;}
+.header-two .get-touch li.contact-no i{ margin: 0px 15px 0 0; float: left; font-size: 26px;}
+.header-two .get-touch li.contact-no a{ font-size:20px; color:#fff;}
+.header-two .cart-button{ color: #fff; padding: 0 0; float: left;}
+.header-two .cart-button i{ color:#fff; font-size: 28px; line-height: 98px;}
+.header-two .shop-bag li.close-bag { cursor: pointer;}
+.header-two .shop-bag li.close-bag a{ padding:0 0;}
+.header-two .shop-bag li.open-bag { background: #fff; display: none; position: absolute; margin:70px 0 0 -305px; width: 345px; padding:0 20px 20px 20px;}
+.header-two ul.shop-bag { float: right;}
+.header-two .shop-bag .num{position: absolute; margin:30px 0 0 22px; float: right; color: #222; background-color: #fff; border-radius: 100%; width: 20px; height: 20px; top: 0; padding: 2px 0 0 0; font-size: 12px; text-align: center;}
+.header-two .shop-bag .cart-food{ border-bottom: solid 1px #d1d1d1; float: left; width: 100%; padding: 20px 0 20px 0;}
+.header-two .shop-bag .cart-food .detail{    float: left;}
+.header-two .shop-bag .cart-food .detail img{ float:left; width:62px;}
+.header-two .shop-bag .cart-food .detail .text{    float: left; margin: 0 0 0 15px; width: 190px;}
+.header-two .shop-bag .cart-food .detail .text a{ text-transform: uppercase; font-weight: 600; font-size: 18px; color: #222;}
+.header-two .shop-bag .cart-food .detail .text p{ color: #666666; font-size: 14px;}
+.header-two .shop-bag .cart-food a.cross{float: right; margin: 15px 0 0 0;}
+.header-two .shop-bag .cart-food a.cross i{font-size: 26px; color: #777;}
+.header-two .shop-bag .cart-food a.cross i:hover{color: #000;}
+.header-two .shop-bag .sub-total{ margin: 30px 0 0 0; float: left; width: 100%;}
+.header-two .shop-bag .sub-total span{ font-size:16px; color:#636363; float: right;}
+.header-two .shop-bag .sub-total span strong{ color:#222; margin: 0 0 0 8px;}
+.header-two .shop-bag .sub-total .buttons{    float: left; width: 100%; margin: 14px 0 0 0;}
+.header-two .shop-bag .sub-total a{ font-size:13px; width: 48%; float: left; border-radius: 5px; text-align: center; color: #fff; text-transform: uppercase; padding: 11px 0;}
+.header-two .shop-bag .sub-total a.view-cart{ background:#bcbcbc;}
+.header-two .shop-bag .sub-total a.check-out{ background:#222; float:right;}
+
+
+
+
+.arrow-scroll img{ width:43px; height:36px;}
+
+.scroll-down{ position:absolute; left:49.2%; bottom:60px; z-index: 5555;}
+.scroll-down.bounce { //bounce animation position:relative; //top:1em; Transform: translateY(4em); animation-name: bounce; animation-timing-function: ease-in;		animation-duration:2.5s; animation-iteration-count: infinite; animation-direction: alternate;}
+
+
+/*..... MAIN TITLE ......*/
+
+.main-title{ text-align:center;}
+.main-title span{ font-size:100px; font-family: 'Tangerine', cursive;}
+.main-title h1{ background: url(../imgs/heading-dark.png) no-repeat center 80px; letter-spacing: 4px; padding: 0 0 70px 0; margin: -6px 0 0 0;}
+.main-title p{width: 80%; display: inline-block;}
+
+.main-title-white{ text-align:center;}
+.main-title-white span{ font-size:100px; font-family: 'Tangerine', cursive; color:#fff;}
+.main-title-white h1{ background:url(../imgs/heading-light.png) no-repeat center 80px; letter-spacing: 4px; padding: 0 0 70px 0; margin: -6px 0 0 0; color:#fff;}
+.main-title-white p{width:80%; display:inline-block;}
+
+.back{ background:#f9f8f7;}
+
+
+
+/*..... SERVICES ......*/
+
+.services-three{ padding:120px 0;}
+.services-three .serv-main-sec{margin: 85px 0 0 0;
+    background: #fff;
+    padding:0 30px;
+
+    text-align: center;}
+
+
+.services-three .serv-main-sec i{font-size:90px; background: #fff; border-radius: 100%; width: 100px; height: 100px; padding: 0; display: inline-block;color:#111; }
+.services-three .serv-main-sec h6{ margin:15px 0 0 0;}
+.services-three .serv-main-sec p{margin:8px 0 0 0;}
+
+
+
+
+/*..... SERVICES TWO ......*/
+.services-two{ padding:120px 0;}
+.services-two .serv-main-sec{margin:85px 0 0 0;}
+.services-two .serv-main-sec .service-sec{ text-align:center;}
+.services-two .serv-main-sec .service-sec .detail{margin: 36px 0 0 0;}
+.services-two .serv-main-sec .service-sec .detail p{margin:8px 0 0 0;}
+.services-two .serv-main-sec .service-sec .detail a{border: solid 1px #dbdbdb; color: #5d5d5d; display: inline-block; margin: 35px 0 0 0; padding: 13px 25px;    font-family: 'Raleway', sans-serif; text-transform: uppercase; font-size: 12px; background:#fff;}
+.services-two .serv-main-sec .service-sec .detail a:hover{color: #fff;}
+
+
+
+
+/*..... BUTTONS ......*/
+.white-btn{ background: #fff; font-size: 15px; color: #5d5d5d; text-transform: uppercase; font-weight: 500; font-family: 'Raleway', sans-serif; padding: 20px 44px;
+ border-radius: 5px; display: inline-block; }
+.white-btn:hover{color:#fff;}
+.dark-bg { background: #f9f8f7;}
+
+
+
+/*..... WELCOME HOTEL ......*/
+.parallax { position: relative; width: 100%; height: 800px; overflow: hidden; text-align:center;}
+.parallax img.parallax-back { position:absolute; bottom:0; left: 0;}
+.parallax .detail { position: absolute; width: 100%;}
+.welcome-hotel{ background:url(../imgs/welcome.jpg) no-repeat fixed; height:800px; width: 100%; background-size: 100%;}
+.welcome-hotel .welcome-detail .text {margin-top:285px; color:#fff;}
+.welcome-hotel .welcome-detail .text h1{ text-transform:inherit; color:#fff; font-weight:800; text-transform:uppercase; padding: 0 0 90px 0; margin: -6px 0 0 0; background: url(../imgs/heading-light.png) no-repeat center 90px; }
+.welcome-hotel .welcome-detail .text p{ margin:15px 0 0 0;}
+.welcome-hotel .welcome-detail .welcome-img{ border-radius: 100%; border: solid 7px #fff; margin-top:130px;}
+
+
+/*..... Home2 WELCOME PEARL HOTEL ......*/
+.welcome-pearl-hotel{ padding:120px 0;}
+.welcome-pearl-hotel .text-detail{ text-align:center; margin:48px 0 0 0;}
+.welcome-pearl-hotel .text-detail a{text-transform: uppercase; font-weight: 500; font-family: 'Raleway', sans-serif; margin: 30px 0 0 0; padding: 0 0 4px 0;    display: inline-block;}
+.welcome-pearl-hotel .text-detail a:hover{ color:#000; border-bottom: solid 2px #000;}
+
+
+
+/*..... SPECIAL SERVICES ......*/
+.special-services{ padding:120px 0; }
+.special-services .post .detail{ background:#fff; padding:48px 32px; position:relative; text-align:center;}
+.special-services .post .detail p{ margin:14px 0 0 0;}
+.special-services .post .detail a{ margin:32px 0 0 0; background-color:#fff; border:solid 1px #dbdbdb; color:#5d5d5d; text-transform:uppercase; font-size:15px;
+ padding:10px 28px; display:inline-block;}
+.special-services .post .detail a:hover{color:#fff;}
+.special-services .owl-carousel{ margin:75px 0 0 0;}
+
+
+
+
+/*..... LATEST POST and FIND US ......*/
+.latest-posts{ padding:120px 0; }
+.latest-posts h4{ text-transform:uppercase;}
+.latest-posts .latest-news{ margin:55px 0 0 0;}
+.latest-posts .latest-news .post-sec{ margin:0 0 45px 0; width:100%; float:left;}
+.latest-posts .latest-news .post-sec.last{ margin:0 0 0 0;}
+.latest-posts .post-sec .post-image{ float:left; width:20%;}
+.latest-posts .post-sec .post-image img{ width:80%;}
+.latest-posts .post-sec .post-detail{ float:left; width:80%;}
+.latest-posts .post-sec .post-detail a{color:#222;}
+.latest-posts .post-sec .post-detail p{ margin:6px 0 0 0;}
+.latest-posts .post-sec .post-detail span{margin: 6px 0 0 0; font-size: 14px; color: #868686; display: inline-block;}
+.latest-posts .find-us{}
+.latest-posts .find-location img{ margin:55px 0 0 0;}
+.latest-posts .find-location a{margin: 32px 0 0 0; background-color: #fff; border: solid 1px #dbdbdb; color: #5d5d5d; text-transform: uppercase; font-size: 15px; padding:14px 28px; color:#222; float:right;}
+.latest-posts .find-location i{margin: 3px 0 0 18px; float: right;}
+.latest-posts .find-location a:hover{color:#fff;}
+
+
+
+/*..... CUSTOMER WORDS ......*/
+.parallax.parallax-customer-words{ background:url(../imgs/testimonials-bg.jpg) no-repeat fixed; height:880px; width: 100%; background-size: 100%;}
+.customer-words .detail{ margin:120px 0 0 0;}
+.customer-words .testi-sec{}
+.customer-words .testi-sec img{ width: 135px; height: 135px; border-radius: 100%; border: solid 5px #fff;}
+.customer-words .testi-sec span.name{font-size:24px; display: block;}
+.customer-words .testi-sec span.work{ color:#fff; display: block; font-size:18px;}
+.customer-words .testi-sec p{ color:#fff; font-size: 20px; width: 84%; display: inline-block;}
+.customer-words .testi-sec .rating i{ color:#f4bc16; font-size: 32px; }
+
+
+
+
+/*..... FOOTER ......*/
+.footer-hotel{ padding:0 0 0 0; border-top:solid 1px #ccc;}
+.footer-hotel .hotel-get-touch{ text-align:center; padding: 60px 0;}
+.footer-hotel .hotel-get-touch .get-touch-sec{ }
+.footer-hotel .hotel-get-touch .get-touch-sec i{color: #222; display: inline-block; border-radius: 100%; padding: 0 0 0 0; font-size: 58px; text-align: center;}
+ .footer-hotel .hotel-get-touch .get-touch-sec .text{margin:26px 0 0 0;}
+.footer-hotel .hotel-get-touch .get-touch-sec .text span{ font-size:20px; display:block; color:#222;}
+.footer-hotel .hotel-get-touch .get-touch-sec .text span strong{font-weight:700;	font-family: 'Raleway', sans-serif; font-size:22px; text-transform:uppercase;}
+
+.footer-hotel .foot-detail{margin: 0px 0 0 0; background: #F5F5F5; padding:85px 0;}
+.footer-hotel .foot-detail .about-pearl{ }
+.footer-hotel .foot-detail h5{ text-transform:uppercase; margin:0px 0 20px 0;}
+.footer-hotel .foot-detail .about-pearl p{ margin:0 0 0 0;}
+.footer-hotel .foot-detail .about-pearl img{ margin:48px 0 0 0; width:auto;}
+
+.footer-hotel .foot-detail .newsletetr .field{display: inline-block; margin:15px 0 0 0;}
+.footer-hotel .foot-detail .newsletetr input[type=text]{background:#fff; border: solid 2px #444444; color:#6c6c6c; font-size:16px; height:45px; width:300px; padding:0 15px; float:left;}
+.footer-hotel .foot-detail .newsletetr a{height:45px; color:#fff; background:#444; padding:9px 10px; font-size:26px; margin:0 0 0 -4px;float:right; width: 48px; }
+.footer-hotel .foot-detail .newsletetr a:hover{color:#fff;}
+
+.footer-hotel .foot-detail .social-icons{margin:45px 0 0 0;}
+.footer-hotel .foot-detail .social-icons ul{margin:15px 0 0 0;}
+.footer-hotel .foot-detail .social-icons ul li{display: inline-block; margin: 0 3px;}
+.footer-hotel .foot-detail .social-icons ul li a{color: #222; border: solid 2px #222; border-radius: 100%; width: 50px; height: 50px; padding: 11px 10px;
+float:left; font-size: 20px; text-align:center; }
+
+
+.footer-hotel .foot-detail .useful-links{}
+.footer-hotel .foot-detail .useful-links ul{}
+.footer-hotel .foot-detail .useful-links ul li{ margin:0 0 24px 0;}
+.footer-hotel .foot-detail .useful-links ul li a{ font-size: 20px; color:#222; display:block;}
+.footer-hotel .foot-detail .useful-links ul li i{ font-size: 12px; color: #555; margin: 8px 11px 0 0; float: left;}
+
+
+.footer-hotel .copyrights{ text-align: center; padding: 32px 0; background: #E8E8E8; border-top: solid 1px #D8D8D8;}
+.footer-hotel .copyrights p{ color:#222;}
+
+
+
+
+
+
+/*..... FOOTER DARK ......*/
+.footer-hotel-dark{ padding:0 0 0 0; border-top:solid 1px #ccc; color:#fff;}
+.footer-hotel-dark .hotel-get-touch{ text-align:center; padding: 60px 0;}
+.footer-hotel-dark .hotel-get-touch .get-touch-sec i{color: #222; display:inline-block; border-radius: 100%; padding: 0 0 0 0; font-size: 58px; text-align: center;}
+.footer-hotel-dark .hotel-get-touch .get-touch-sec .text{margin:26px 0 0 0;}
+.footer-hotel-dark .hotel-get-touch .get-touch-sec .text span{ font-size:20px; display:block; color:#222;}
+.footer-hotel-dark .hotel-get-touch .get-touch-sec .text span strong{font-weight:700; font-family: 'Raleway', sans-serif; font-size:22px; text-transform:uppercase;}
+
+.footer-hotel-dark .foot-detail{margin:0px 0 0 0; background:#0A1D3B; padding:85px 0;}
+.footer-hotel-dark .foot-detail .about-pearl{ color:#fff; }
+.footer-hotel-dark .foot-detail h5{ text-transform:uppercase; margin:0px 0 20px 0;}
+.footer-hotel-dark .foot-detail .about-pearl p{ margin:0 0 0 0;}
+.footer-hotel-dark .foot-detail .about-pearl img{ margin:48px 0 0 0; width:auto;}
+
+.footer-hotel-dark .foot-detail .newsletetr .field{display: inline-block; margin:15px 0 0 0;}
+.footer-hotel-dark .foot-detail .newsletetr input[type=text]{background:#fff; border: solid 2px #444444; color:#6c6c6c; font-size:16px; height:45px; width:300px; padding:0 15px; float:left;}
+.footer-hotel-dark .foot-detail .newsletetr a{height:45px; color:#fff; background:#444; padding:9px 10px; font-size:26px; margin:0 0 0 -4px;float:right; width:48px;}
+.footer-hotel-dark .foot-detail .newsletetr a:hover{color:#fff;}
+
+.footer-hotel-dark .foot-detail .social-icons{margin:45px 0 0 0;}
+.footer-hotel-dark .foot-detail .social-icons ul{margin:15px 0 0 0;}
+.footer-hotel-dark .foot-detail .social-icons ul li{display: inline-block; margin: 0 3px;}
+.footer-hotel-dark .foot-detail .social-icons ul li a{color:#fff; border: solid 2px #fff; border-radius: 100%; width: 50px; height: 50px; padding: 11px 10px;
+float:left; font-size: 20px; text-align:center; }
+
+
+.footer-hotel-dark .foot-detail .useful-links ul li{ margin:0 0 24px 0;}
+.footer-hotel-dark .foot-detail .useful-links ul li a{ font-size: 20px; color:#fff; display:block;}
+.footer-hotel-dark .foot-detail .useful-links ul li i{ font-size: 12px; color: #fff; margin: 8px 11px 0 0; float: left;}
+
+
+.footer-hotel-dark .copyrights{ text-align: center; padding: 32px 0; background: #071833; border-top: solid 1px #071833;}
+.footer-hotel-dark .copyrights p{ color:#fff;}
+
+
+
+
+
+
+/*..... SUB BANNER ......*/
+.sub-banner{ height:505px; min-height:505px;}
+.sub-banner .banner-img{ background:url(../imgs/sub-banner-hotel.jpg) no-repeat; width:100%; height:100%; background-size: cover;}
+.sub-banner .detail { position: absolute; top:220px; text-align: center; width: 100%;     display: block;}
+.sub-banner .detail h1{ color:#fff; display: block;}
+.sub-banner .detail span{color:#fff; font-size: 20px; display: block;}
+.sub-banner .detail ul{ float:right; margin:110px 0 0 0;}
+.sub-banner .detail ul li{ float: left; background: url(../imgs/paging-arrow.png) no-repeat right 9px; margin: 0 0 0 0; padding: 0 16px 0 10px;}
+.sub-banner .detail ul li:last-child{background:none;}
+.sub-banner .detail ul li a{ color:#fff;}
+.sub-banner .detail ul li a.select{ font-weight:700;}
+
+
+
+
+/*..... ABOUT US ......*/
+
+.about-hotel{ padding:120px 0;}
+.about-hotel .quality{ text-align:center; margin:0 0 38px 0}
+.about-hotel .quality img{ width:150px; height:138px;}
+.about-hotel .what-we-do{ margin:58px 0 0 0;}
+.about-hotel .what-we-do p{ margin:8px 0 0 0;}
+.about-hotel .include-sec{text-align:center; float:left; width:18%; padding:28px 0; border:solid 1px #ccc; margin:65px 2% 0 0;}
+.about-hotel .include-sec.last{margin:65px 0 0 0;}
+.about-hotel .include-sec:hover{ background:#EAEAEA;}
+.about-hotel .include-sec img{ width:114px;}
+.about-hotel .include-sec span{ display: block; text-transform: uppercase; font-weight: 900; font-size: 20px; margin: 12px 0 0 0;}
+
+
+/*..... OUR TEAM ......*/
+.team-members{ padding:120px 0;}
+.team-members .chef-sec{ margin:60px 0 0 0}
+.team-members .chef-sec .detail{ text-align:center; margin:52px 0 0 0;}
+.team-members .chef-sec .detail p{ margin:8px 0 0 0;}
+.team-members .chef-sec .detail ul{ margin:22px 0 0 0;}
+.team-members .chef-sec .detail ul li{     display: inline-block;}
+.team-members .chef-sec .detail ul li a{ color:#6a6a6a; text-transform:uppercase; font-weight: 500; font-family: 'Raleway', sans-serif; font-size:14px;}
+.team-members .chef-sec .detail ul li a.fb:hover{ color:#4d6299; border-bottom:solid 2px #4d6299;}
+.team-members .chef-sec .detail ul li a.tw:hover{ color:#4ac5f1; border-bottom:solid 2px #4ac5f1;}
+.team-members .chef-sec .detail ul li a.gp:hover{ color:#d96653; border-bottom:solid 2px #d96653;}
+.team-members .chef-sec .detail ul li span{ color:#6a6a6a; margin: 0 6px; font-size: 22px;}
+
+
+
+
+
+/*..... HOTEL ROOMS ......*/
+.hotel-rooms{ padding:120px 0;}
+.hotel-rooms .room-sec{border:solid 1px #ccc; float:left; width:100%; margin:0 0 55px 0;}
+.hotel-rooms .room-sec p{ margin:5px 0 0 0;}
+.hotel-rooms .room-sec img{width:390px; float:left;}
+.hotel-rooms .room-sec .text-detail{ float:left; width:560px; margin:30px 0 0 35px;}
+.hotel-rooms .room-sec .text-detail ul{ margin:35px 0 0 0;}
+.hotel-rooms .room-sec .text-detail ul li{    float: left; width: 49%; margin:0 0 18px 0;}
+.hotel-rooms .room-sec .text-detail ul li i{float:left; margin:5px 10px 0 0; color:#656565;}
+.hotel-rooms .room-sec .text-detail ul li span{ font-size:20px;  float:left; }
+.hotel-rooms .room-sec .price-detail{ text-align:center; width:165px; float:left; margin:30px 0 0 0;}
+.hotel-rooms .room-sec .price-detail .stars{}
+.hotel-rooms .room-sec .price-detail .stars i{ color: #f4bc16; font-size: 26px; margin: 0 3px 0 0;}
+.hotel-rooms .room-sec .price-detail .room-price{    background: #f5f5f5; padding: 32px 0; margin: 15px 0 0 0;}
+.hotel-rooms .room-sec .price-detail .room-price span.current{color:#0a1d3b; font-size:40px; font-weight: 700; display: block;}
+.hotel-rooms .room-sec .price-detail .room-price span.old{ font-size: 35px; display: block; margin:-5px 0 0 0; text-decoration: line-through; font-weight: 300;}
+.hotel-rooms .room-sec .price-detail .room-price span.per-night{margin:12px 0 0 0; display: block;}
+.hotel-rooms .room-sec .price-detail a{ background: #0A1D3B; color: #fff; width: 100%; display: block; padding: 12px 0; text-transform: uppercase; font-size: 16px;
+ font-weight: bold; margin: 12px 0 0 0;}
+.hotel-rooms .paging{text-align: center;}
+.hotel-rooms .paging a{ color: #5e5e5e; border: solid 1px #e0e0e0; padding: 10px 16px; text-align: center; display: inline-block; margin:15px 2px 0 2px;}
+.hotel-rooms .paging a.select, .hotel-rooms .paging a:hover{color:#fff;}
+
+
+
+
+/*..... HOTEL ROOMS DETAIL ......*/
+.room-detail{ padding:120px 0;}
+.room-detail .what-include { float: left; width: 100%; margin:65px 0 0 0;}
+.room-detail .include-sec{text-align:center; float:left; width:18%; padding:28px 0; border:solid 1px #ccc; margin:0 15px 15px 0;}
+.room-detail .include-sec.last{margin:0 0 0 0;}
+.room-detail .include-sec:hover{ background:#EAEAEA;}
+.room-detail .include-sec img{ width:70px;}
+.room-detail .include-sec span{ display: block; text-transform: uppercase; font-weight: 900; font-size: 15px; margin: 12px 0 0 0;}
+.room-detail .room-descrip{ margin: 55px 0 0 0; float: left; width: 100%;}
+.room-detail .room-descrip p{ margin:8px 0 0 0;}
+.room-detail .room-overview{float: left; width: 100%; margin:38px 0 0 0;}
+.room-detail .room-overview .detail{padding:16px 25px; background: #f5f5f5;}
+.room-detail .room-overview .detail span strong{width:48%; float:left;}
+.room-detail .room-overview .detail span{ font-size:18px;}
+.room-detail .room-overview .light-gray{background:#fcfcfc;}
+
+.room-detail .booking-form{ background:#0a1d3b; text-align:center; padding:65px 35px 35px 35px; width:100%; float:left;}
+.room-detail .booking-form i{ color:#f4bc16; font-size:25px; margin:0 3px;}
+.room-detail .booking-form .price{ margin:35px 0 0 0;}
+.room-detail .booking-form .price span{ color:#fff; font-size:18px; display:block;}
+.room-detail .booking-form .price span.amount{font-size: 60px; font-weight: 600; margin:0px 0 0 0; display: block;}
+.room-detail .booking-form .form{ margin:48px 0 0 0; }
+.room-detail .booking-form .form .field{margin:0 0 10px 0;}
+.room-detail .booking-form .form .field.rooms{ z-index:11; position:relative;}
+.room-detail .booking-form .form .field input[type=text]{ width:100%;}
+.room-detail .booking-form .form .field2{ width:48%; float:left;}
+.room-detail .booking-form .form .field2.last{ width:48%; float:right;}
+.room-detail .booking-form .form a.availability{float: left; width: 100%; padding:2px 0; text-transform: uppercase; color: #fff !important; font-size: 16px; text-align: center;}
+.room-detail .booking-form .form a.availability:hover{    background: #fff; color: #222 !important;}
+
+
+
+
+
+
+
+
+/*..... BREAD CRUMB ......*/
+.bread-crumb{ text-align:center; background:#f4f4f4; border-radius:30px; width:100%; height:18px;}
+.bread-crumb .bread-crumb-sec{ float:left; width:33.3%; margin:-18px 0 0 0;}
+.bread-crumb .bread-crumb-sec a{ display:inline-block;}
+.bread-crumb .bread-crumb-sec a.selected{}
+.bread-crumb .bread-crumb-sec a span.number{ background: #FFF; border-radius: 100%; width: 50px; height: 50px; display: inline-block; color: #484747;
+font-size: 30px; font-weight: 700; padding: 4px 0 0 0; box-shadow: 0 0 0 6px #F4F4F4;}
+.bread-crumb .bread-crumb-sec a span.text{ font-size: 20px; color: #222; margin: 10px 0 0 0; display: inline-block; font-weight: 500;}
+
+.bread-crumb .bread-crumb-sec a.selected span.number{border-radius: 100%; width: 50px; height: 50px; display: inline-block; color: #fff;
+font-size: 30px; font-weight: 700; padding: 4px 0 0 0; box-shadow: 0 0 0 6px #F4F4F4;}
+
+
+
+
+/*..... Choose Your Room ......*/
+.booking-steps{ padding:120px 0;}
+.booking-steps .detail-sections{ margin:110px 0 0 0; width:100%; float:left;}
+.booking-steps .reservation{ background:#0a1d3b;  color:#fff; padding: 30px;}
+.booking-steps .reservation span.title{text-transform: uppercase; font-size: 22px; font-weight: bold;}
+.booking-steps .reservation p{font-size: 18px; margin: 8px 0 0 0; line-height: 21px;}
+.booking-steps .reservation ul{ margin:30px 0 0 0;}
+.booking-steps .reservation ul li{border-bottom: solid 1px #47566c; line-height: 52px;}
+.booking-steps .reservation ul li span{font-size: 18px;}
+.booking-steps .reservation ul li span strong{ margin:0 5px 0 0;}
+.booking-steps .reservation .total-price{ text-align:center; background:#23344f; display: block; margin:48px 0 0 0; padding:0 0 18px 0;}
+.booking-steps .reservation .total-price span.sub-title{ display:inline-block; background: #0a1d3b; padding:3px 20px;}
+.booking-steps .reservation .total-price span.price{ display:block; font-size:48px; font-weight:600; margin:10px 0 0 0;}
+.booking-steps .reservation a{font-size:16px; text-transform: uppercase; color: #fff; font-weight: bold; width: 100%; display: block;
+ text-align: center; margin: 35px 0 0 0; padding: 18px 0;}
+.booking-steps .reservation a:hover{background: #fff; color:#222;}
+
+.booking-steps .your-room .detail{ margin:42px 0 0 0;}
+.booking-steps .your-room .detail img{ width:100%;}
+.booking-steps .your-room .detail .text{ float:left; width:76%; margin:30px 0 0 0;}
+.booking-steps .your-room .detail .text p{ margin:8px 0 0 0;}
+.booking-steps .your-room .detail .text a{text-transform: uppercase; background: #0A1D3B; color: #fff; padding:15px 38px; display: inline-block; font-weight: 600; margin: 26px 0 0 0;}
+.booking-steps .your-room .detail .text a:hover{color:#fff;}
+
+.booking-steps .price-detail{ text-align:center; width:20%; float:right; margin:30px 0 0 0;}
+.booking-steps .price-detail .stars i{ color: #f4bc16; font-size: 26px; margin: 0 3px 0 0;}
+.booking-steps .price-detail .room-price{    background: #f5f5f5; padding: 32px 0; margin: 15px 0 0 0;}
+.booking-steps .price-detail .room-price span.current{color:#0a1d3b; font-size:40px; font-weight: 700; display: block;}
+.booking-steps .price-detail .room-price span.old{ font-size: 35px; display: block; margin:-5px 0 0 0; text-decoration: line-through; font-weight: 300;}
+.booking-steps .price-detail .room-price span.per-night{margin:12px 0 0 0; display: block;}
+
+
+.booking-steps .guest-detail{}
+.booking-steps .guest-detail .form{ margin:48px 0 0 0;}
+.booking-steps .guest-detail .form .field{ margin:0 0 30px 0;}
+.booking-steps .guest-detail .form .field label{font-weight: normal; font-size: 18px; font-family: 'Raleway', sans-serif;}
+.booking-steps .guest-detail .form .field label span{color:#f00; font-size:30px; float: right; margin: -5px 0 0 8px;}
+.booking-steps .guest-detail .form .field input[type=text]{width: 100%; border: solid 2px #ccc; height: 50px; padding: 0 0 0 12px; font-size: 18px; color: #222;
+ margin:7px 0 0 0; }
+.booking-steps .guest-detail .form .field textarea{width: 100%; border: solid 2px #ccc; height:170px; padding:10px 0 0 12px; font-size: 18px; color: #222;
+ margin:7px 0 0 0; }
+
+.booking-steps .book-now{ margin:48px 0 0 0;}
+.booking-steps .book-now .payment-method{background: #222; color: #fff; padding:48px 20px; text-align: center;}
+.booking-steps .book-now .payment-method span{ font-size:22px; text-transform: uppercase; font-weight: 700;}
+.booking-steps .book-now .payment-method p{font-size: 18px; margin:8px 0 0 0; line-height: 23px;}
+.booking-steps .book-now .payment-method a{background:#fff; display: inline-block; margin: 30px 0 0 0; padding:14px 0; text-transform: uppercase; font-weight: 600; color: #222; font-size: 16px; width:100%;}
+.booking-steps .book-now .payment-method a:hover{color:#fff;}
+
+.booking-steps .confirmation .contact{ float:left; margin:40px 65px 0 0;}
+.booking-steps .confirmation .contact i{font-size:40px; float:left;}
+.booking-steps .confirmation .contact span{font-size: 20px; float: left; margin: 6px 0 0 15px;}
+
+
+
+
+/*..... BLOG ......*/
+.blog{ padding:120px 0;}
+.blog .blog-post { display: inline-block; margin:0 0 120px 0;}
+.blog .blog-post .post-text{ text-align:center; margin:105px 0 0 0;}
+.blog .blog-post .post-text span{color: #888888; text-transform: uppercase; font-size: 18px;}
+.blog .blog-post .post-text span.dot{ margin: 0 4px; font-size: 36px;}
+.blog .blog-post .post-text h3{font-weight: 700; color: #333; margin: 10px 0 0 0; display: block;}
+.blog .blog-post .post-text h3 a{color: #333; margin: 15px 0 0 0;}
+.blog .blog-post .post-text h3 a:hover{color: #e9b947;}
+.blog .blog-post .post-text p{ margin:5px 0 0 0;}
+.blog .blog-post .post-text a.read-more{text-transform: uppercase; font-weight: 500; font-family: 'Raleway', sans-serif; margin:48px 0 0 0;
+padding: 0 0 4px 0; display: inline-block;}
+.blog .blog-post .post-text a.read-more:hover{ color: #000; border-bottom: solid 2px #000;}
+.blog .more-posts .newest-post{ float:left; font-size:26px; color:#727272; font-weight: 300;}
+.blog .more-posts .newest-post i{ font-size: 28px; float: left; margin: 3px 8px 0 0;}
+.blog .more-posts .older-post{ float:right; font-size:26px; color:#727272; font-weight: 300;}
+.blog .more-posts .older-post i{ font-size: 28px; float: right; margin:3px 0px 0 8px;}
+
+
+
+
+
+/*..... BLOG ......*/
+.news-posts{ padding:120px 0;}
+.news-posts .news-sec{ margin: 0 0 120px 0;}
+.news-posts .news-sec.text-based{ border:solid 1px #cecece; padding: 40px;}
+.news-posts .news-sec.text-based .detail{ margin:0 0 0 0;}
+.news-posts .news-sec .detail{ margin:35px 0 0 0;}
+.news-posts .news-sec .detail span{ color:#727272; font-size:22px; font-weight:300;}
+.news-posts .news-sec .detail i{ font-size:26px;}
+.news-posts .news-sec .detail .post-writer{ float:left; margin:0 25px 0 0px;}
+.news-posts .news-sec .detail .post-writer img{ float:left; width:42px; height:42px; border-radius:100%;}
+.news-posts .news-sec .detail .post-writer span{ margin:8px 0 0 12px; float:left;}
+.news-posts .news-sec .detail .date{ float:left; margin:0 25px 0 0px;}
+.news-posts .news-sec .detail .date i{margin: 10px 0 0 0; float: left;}
+.news-posts .news-sec .detail .date span{ margin:8px 0 0 10px; float:left;}
+.news-posts .news-sec .detail .comment{ display: inline-block; margin:0 0 0 0px;}
+.news-posts .news-sec .detail .comment i{margin:5px 10px 0 0; float: left;}
+.news-posts .news-sec .detail .comment a{ margin:8px 0 0 10px; float:left; color:#727272; font-size:22px;}
+.news-posts .news-sec .detail h3{ color: #222222;  font-weight:700; margin:30px 0 0 0;  }
+.news-posts .news-sec .detail h4{display: inline-block; margin:30px 0 0 0; text-transform:inherit;}
+.news-posts .news-sec .detail p{ margin:5px 0 0 0;}
+.news-posts .news-sec .detail a.read-more{text-transform: uppercase; font-weight: 500; font-family: 'Raleway', sans-serif; margin: 45px 0 0 0;
+padding: 0 0 4px 0; display: inline-block;}
+.news-posts .news-sec .detail a.read-more:hover{ color: #000; border-bottom: solid 2px #000;}
+.news-posts h6.bar-title{font-weight: 500;  color: #fff;  padding: 14px 24px;  display: block;}
+.news-posts .recent-posts .post-sec{ margin:35px 0 0 0;}
+.news-posts .recent-posts .post-sec img{ width:82px; float:left; margin:0 22px 0 0;}
+.news-posts .recent-posts .post-sec a.title{font-family: 'Raleway', sans-serif;   font-weight: 600;  font-size: 20px; color:#222;}
+.news-posts .recent-posts .post-sec span.date{  color: #ABABAB;  display: block;  margin: 5px 0 0 0;  font-size: 15px;}
+.news-posts .categories{ margin:105px 0 0 0;}
+.news-posts .categories ul{ margin:22px 0 0 0;}
+.news-posts .categories ul li{float: left;  width: 100%;  line-height: 39px;}
+.news-posts .categories ul li a{ color: #555555;  font-size: 20px;}
+.news-posts .categories ul li a i{  font-size: 28px;    margin: 7px 4px 0 0;  float: left;}
+.news-posts .tags{ margin:75px 0 0 0;}
+.news-posts .tags .all-tags{ margin:30px 0 0 0;}
+.news-posts .tags .all-tags a{  color: #555555;  border: solid 1px #c8c8c8;  display: inline-block;  padding: 10px 23px;  margin: 0 0 6px 1px;}
+.news-posts .tags .all-tags a:hover{ color: #fff; background:#0A1D3B; border: solid 1px #0A1D3B;}
+.news-posts .search{margin:75px 0 0 0; padding:24px; display: inline-block; width: 100%;}
+.news-posts .search input[type=text]{  width:88%;  padding: 14px 12px;  color: #747474;  font-style: italic; border:none; float:left;}
+.news-posts .search a{ width:12%;  float: right;  background-color: #fff;  padding:14px 10px;   border:none;  margin: 0 0px 0 0; color:#333; text-align: center;}
+.news-posts .search a:hover{background-color: #0A1D3B; color:#fff; }
+
+
+
+/*..... BLOG DETAIL PAGE ......*/
+.news-posts .news-detail{ margin: 0 0 0 0;}
+.news-posts .news-detail .detail{ margin:35px 0 0 0;}
+.news-posts .news-detail .detail span.date{ font-size:20px; color:#828282;}
+.news-posts .news-detail .detail h3{ color: #222222;  font-weight: 600;  text-transform: none;  margin: 12px 0 0 0; }
+.news-posts .news-detail .detail p{ margin:15px 0 0 0;}
+
+.news-posts .news-detail .sub-detail{ margin:65px 0 30px 0; display: inline-block;}
+.news-posts .news-detail .sub-detail h6{}
+.news-posts .news-detail .sub-detail .sub-images{ margin:20px 0 0 0;}
+.news-posts .news-detail .sub-detail .sub-images img{ float:left; width:48%; margin:15px 0 0 0;}
+.news-posts .news-detail .sub-detail .sub-images img.right{ float:right;}
+
+.news-posts .share-post{ margin:85px 0 0 0;}
+.news-posts .share-post h6{ color:#222; font-family: 'Raleway', sans-serif; font-weight:700;}
+.news-posts .share-post .social-icons{ margin:15px 0 0 0; display:inline-block;}
+.news-posts .share-post .social-icons img{ width:auto;}
+
+.news-posts .author-post{ background:#fff; border:solid 1px #c8c8c8; padding:4px; display: inline-block; margin:85px 0 0 0;}
+.news-posts .author-post .author-detail{background:#fff; border:solid 1px #c8c8c8; padding:25px; display: inline-block;}
+.news-posts .author-post .author-detail img{ float:left; width:136px; border-radius:100%; margin:0 22px 0 0;}
+.news-posts .author-post .author-detail .text{}
+.news-posts .author-post .author-detail .text span.name{font-weight: 800; text-transform: uppercase; font-size: 22px;}
+.news-posts .author-post .author-detail .text span.position{ margin:6px 0 0 6px; }
+.news-posts .author-post .author-detail .text p{ display:block; margin:15px 0 0 0;}
+
+.news-posts .comments-sec{ margin:85px 0 0 0;}
+.news-posts .comments-sec h3{ text-transform: capitalize;  font-weight: 600;}
+.news-posts .comment-box{ border:solid 1px #c8c8c8; padding:15px; margin:0 0 18px 0;}
+.news-posts .comment-box img{  width: 12%;  float: left;}
+.news-posts .comment-box .detail{  width: 85%;  float: right;}
+.news-posts .comment-box .detail a{ background: #262526;  color: #fff;  padding: 5px 14px;  position: absolute;  right: 40px;}
+.news-posts .comment-box .detail span.name{font-size:20px; color:#222; font-family: 'Raleway', sans-serif; font-weight:600;}
+.news-posts .comment-box .detail span.date{ font-size:16px; color:#555555; display: block;}
+.news-posts .comment-box .detail p{ margin:10px 0 0 0;}
+.news-posts .comment-box .reply-comment{ background: #F7F7F7;  margin: 20px 0 0 0;}
+.news-posts .all-comments{ margin:35px 0 0 0;}
+.news-posts .leave-reply{ margin:85px 0 0px 0;}
+.news-posts .leave-reply h3{ text-transform: capitalize;  font-weight: 600; }
+.news-posts .leave-reply .form{ margin:35px 0 0 0;}
+.news-posts .leave-reply .form input[type=text]{  width: 32%;  padding: 0 12px;  border: solid 1px #b1b1b1;  height: 48px; margin:0 12px 0 0; color:#222;}
+.news-posts .leave-reply .form input[type=text].last{ margin:0px;}
+.news-posts .leave-reply textarea {  width: 100%;  height: 220px;  padding: 12px 12px; margin:16px 0 0 0;}
+.news-posts .leave-reply .form input[type=submit] { border: none; background-color: #262526; color: #fff; padding: 14px 35px; text-transform: uppercase;  font-weight: 700; cursor: pointer; margin: 12px 0 0 0;}
+
+
+
+
+/*..... CONTACT US ONE ......*/
+.contact-page .get-in-touch{ padding:120px 0;}
+.contact-page .get-in-touch .get-touch-detail h3{ font-weight: 700;}
+.contact-page .get-in-touch .get-touch-detail p{ margin:10px 0 0 0;}
+.contact-page .get-in-touch .social-icons{margin: 48px 0 0 0;}
+.contact-page .get-in-touch .social-icons ul{margin:18px 0 0 0;}
+.contact-page .get-in-touch .social-icons ul li{display: inline-block; margin: 0 3px;}
+.contact-page .get-in-touch .social-icons ul li a{color: #222; border: solid 2px #444444; border-radius: 100%; width: 50px; height: 50px; padding: 11px 13px;	float:left; font-size: 20px;}
+.contact-page .get-in-touch .social-icons ul li a:hover{color: #808080; border: solid 2px #808080; }
+
+.contact-page .get-in-touch .get-touch-form{}
+.contact-page .get-in-touch .get-touch-form input[type=text]{ float:left; width:48%; border:solid 1px #bfbfbf; height:52px; border-radius:5px;
+padding:0 10px; font-size:18px; color:#464646;}
+.contact-page .get-in-touch .get-touch-form input#email_address{  float:right;}
+.contact-page .get-in-touch .get-touch-form textarea{ margin:20px 0 0 0; width:100%; border:solid 1px #bfbfbf; height:234px; border-radius:5px;
+font-size:18px; color:#464646; padding:10px;}
+.contact-page .get-in-touch .get-touch-form input[type=submit]{ float:left; border:none; border-radius:5px; padding:18px 40px; font-size:15px; color:#fff; font-family: 'Raleway', sans-serif; font-weight:400; text-transform:uppercase; margin:15px 0 0 0;}
+.contact-page .get-in-touch .get-touch-form input[type=submit]:hover{background:#0a1d3b; }
+#find-us { height:680px; width:100%px; }
+#map{ margin:0 0 -4px 0; 	}
+.gm-style-iw * { display: block; width: 270px !important; overflow: hidden;}
+.gm-style-iw h4{ margin: 0; padding: 0; font-size:26px; margin:0 0 6px 0;}
+.gm-style-iw p { margin: 0; padding: 0;}
+.gm-style-iw a { color: #4272db; }
+
+
+
+/*..... CONTACT US TWO ......*/
+.find-us{ padding:120px 0;}
+.find-us .get-touch h3{ font-weight: 700;}
+.find-us .get-touch p{ margin:8px 0 0 0;}
+.find-us .get-in-touch span{  font-size: 20px;  display: block;  line-height: 34px;}
+.find-us .get-in-touch .social-icons a{  color: #222;  border: solid 1px #222;  padding: 7px 9px;  border-radius: 100%;  font-size: 16px; margin:0 5px 0 0px;}
+.find-us .get-in-touch .social-icons a:hover{ color:#fff;}
+.find-us .get-in-touch span a{ color:#222;}
+.find-us .get-in-touch span a:hover{ color:#02adc6;}
+.find-us .get-in-touch .social-icons{ margin:25px 0 0 0;}
+.find-us .get-in-touch .social-icons a.fb:hover {  background: #5c85ce;  border: solid 1px #5c85ce;}
+.find-us .get-in-touch .social-icons a.tw:hover {  background: #02c0f2;  border: solid 1px #02c0f2;}
+.find-us .get-in-touch .social-icons a.gp:hover {  background: #eb6850;  border: solid 1px #eb6850;}
+.find-us .get-in-touch .social-icons a.vimeo:hover {  background: #68d4ee;  border: solid 1px #68d4ee;}
+.get-directions {  text-align: center;  margin: 40px 0 0 0;}
+.get-directions input[type="submit"] {  background: url(../imgs/directions-btn.png) no-repeat;  width: 72px;  height: 59px; color:rgba(255, 255, 255, 0);
+  padding: 0;  margin: 0;  border: 0;  min-width: 0;  position: relative;  top: -2px;}
+.get-directions input[type="text"] {    padding: 15px 2% 17px;  width:85%;  max-width: 556px;  font-size: 22px;  color: #747474;  font-weight: 400;  font-family: 'Raleway', sans-serif;  border: solid 1px #BEBEBE;  border-radius: 10px;  margin: 0 10px 0 0;}
+.find-us .get-touch .map{ margin:38px 0 0 0;}
+.find-us .get-touch .detail{ margin:45px 0 0 0;}
+.find-us .get-touch .detail span{  font-size: 20px;  display: block;  line-height: 34px;}
+.find-us .get-touch .detail span b{ margin:0 5px 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*..... FORM ERROR and SUCCESS MESSAGES ......*/
+p#reserv_error { border: solid 3px #FFA3A3; background: #FBF0F0; padding: 12px 0; margin: -28px 0 15px 16px; width: 96%;}
+form#newsletter_form .error { border: solid 2px #F77070 !important;}
+#contact_form .error { border: solid 1px #FF8282 !important; background: #FFF1F1;}
+
+.booking-form .success{font-family: 'Raleway', sans-serif; font-size:26px; margin: 95px 0 0 0; color: #E9B947;  position: absolute; left:0; text-align:center; width:100%; }
+
+.newsletter .success_msg{font-family: 'Raleway', sans-serif; font-size:22px; margin:12px 0 0 0; color: #E9B947;  position: absolute; left:0; text-align:center; width:100%; }
+
+.get-touch-form .success_msg{font-family: 'Raleway', sans-serif; font-size:22px; margin:12px 0 0 0; color: #E9B947;  position: absolute; left:0; text-align:center; width:100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

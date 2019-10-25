@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery timesetter Plugin Demo</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.timesetter.css" rel="stylesheet">
+    <style>
+    body { background-color:#fafafa; font-family:'Roboto';}
+    h2 { font-size:120%;}
+    .container { margin:150px auto;}
+    </style>
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/time-clock/User-friendly-Duration-Picker-Plugin-With-jQuery-timesetter.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery timesetter Plugin Demo</h1>
+<h2>Demo 1:</h2>
+    <div class="div1"></div>
+    <div style="clear:both;"></div>
+<h2>Demo 2:</h2>
+    <div class="div2"></div>
+    <div style="clear:both;"></div>
+
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.timesetter.js"></script>
+</div>
+<script>
+/*
+
+On page load call the below code
+
+*/
+
+$(document).ready(function ()
+{
+    var options1 = {
+        hour: {
+            value: 0,
+            min: 0,
+            max: 24,
+            step: 1,
+            symbol: "hrs"
+        },
+        minute: {
+            value: 0,
+            min: 0,
+            max: 60,
+            step: 15,
+            symbol: "mins"
+        },
+        direction: "increment", // increment or decrement
+        inputHourTextbox: null, // hour textbox
+        inputMinuteTextbox: null, // minutes textbox
+        postfixText: "", // text to display after the input fields
+        numberPaddingChar: '0' // number left padding character ex: 00052
+    };
+
+    $(".div1").timesetter(options1).setHour(17);
+    $(".div2").timesetter().setValuesByTotalMinutes(175);
+
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
