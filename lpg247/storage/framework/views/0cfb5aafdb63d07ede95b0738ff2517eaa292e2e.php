@@ -1,0 +1,1 @@
+Congratulations !!! You have a new Order with no <?php echo e($order_no); ?><?php /**PATH /home/lpg247/public_html/resources/views/user/marketer/email/newOrderMail.blade.php ENDPATH**/ ?>
