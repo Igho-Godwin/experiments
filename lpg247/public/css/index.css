@@ -1,0 +1,669 @@
+.popurlar_product .items-in {
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+@media (max-width: 767px)
+{
+.new-arrival .popurlar_product .over-item {
+    padding-top: 45%;
+}
+}
+
+.star-margin{
+    margin:0px!important;
+    margin-top:5px!important;
+}
+
+.popurlar_product .over-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    text-align: center;
+    padding-top: 48%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 99;
+}
+
+.hide{
+    display:none!important;
+}
+
+.lighter-overlay {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+    -moz-transition-property: opacity, -moz-transform;
+    transition-property: opacity, transform;
+    background: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 100%;
+}
+
+.lighter img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+img {
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    display: inline-block !important;
+}
+*/
+
+.lighter {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4000;
+    opacity: 1;
+}
+
+ .lighter-close {
+    cursor: pointer;
+    position: absolute;
+    z-index: 8000;
+    text-align: center;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition-property: color, background;
+    -moz-transition-property: color, background;
+    transition-property: color, background;
+}
+
+
+.lighter-close {
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin: -15px;
+    line-height: 32px;
+    font-size: 16pt;
+    font-family: Helvetica, Arial, serif;
+}
+
+.lighter-fetched .lighter-container {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.lighter-container {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+    -moz-transition-property: opacity, -moz-transform;
+    transition-property: opacity, transform;
+    background: #FFF;
+    position: absolute;
+    z-index: 4000;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.lighter {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 4000;
+	opacity: 1;
+}
+.lighter img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.lighter-fade .lighter-overlay {
+	opacity: 0;
+}
+.lighter-loading .lighter-spinner {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.lighter-loading .lighter-container {
+	opacity: 0;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	-ms-transform: scale(0.4);
+	-o-transform: scale(0.4);
+	transform: scale(0.4);
+}
+.lighter-fetched .lighter-spinner {
+	opacity: 0;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	-ms-transform: scale(0.4);
+	-o-transform: scale(0.4);
+	transform: scale(0.4);
+}
+.lighter-fetched .lighter-container {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.lighter-fade .lighter-container {
+	opacity: 0;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	-ms-transform: scale(0.4);
+	-o-transform: scale(0.4);
+	transform: scale(0.4);
+}
+.lighter-fade .lighter-spinner {
+	opacity: 0;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	-ms-transform: scale(0.4);
+	-o-transform: scale(0.4);
+	transform: scale(0.4);
+}
+.lighter-overlay {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition-property: opacity, -webkit-transform;
+	-moz-transition-property: opacity, -moz-transform;
+	transition-property: opacity, transform;
+	background: rgba(255, 255, 255, 0.8);
+	height: 100%;
+	width: 100%;
+}
+.lighter-container {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition-property: opacity, -webkit-transform;
+	-moz-transition-property: opacity, -moz-transform;
+	transition-property: opacity, transform;
+	background: #FFF;
+	position: absolute;
+	z-index: 4000;
+	top: 50%;
+	left: 50%;
+	right: 50%;
+	bottom: 50%;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.lighter-close {
+	top: 0;
+	right: 0;
+	width: 32px;
+	height: 32px;
+	text-align:center;
+	margin: -15px;
+	line-height: 32px;
+	font-size: 16pt;
+	font-family: Helvetica, Arial, serif;
+}
+.lighter-next, .lighter-prev {
+	display: none;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	margin: -20px 0;
+	line-height: 34px;
+	font-size: 32pt;
+	font-family: Times, serif;
+}
+.lighter-next {
+	right: 40px;
+}
+.lighter-prev {
+	left: 40px;
+}
+.lighter-next, .lighter-prev, .lighter-close {
+	cursor: pointer;
+	position: absolute;
+	z-index: 8000;
+	text-align: center;
+	border-radius: 50%;
+	color: rgba(255, 255, 255, 1);
+	background: rgba(0, 0, 0, 0.4);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition-property: color, background;
+	-moz-transition-property: color, background;
+	transition-property: color, background;
+}
+.lighter-next:hover, .lighter-prev:hover, .lighter-close:hover {
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+}
+.lighter-next:active, .lighter-prev:active, .lighter-close:active {
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+}
+.lighter-spinner {
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+	position: absolute;
+	width: 60px;
+	height: 20px;
+	margin: -10px -30px;
+	z-index: 4000;
+	top: 50%;
+	left: 50%;
+	right: 50%;
+	bottom: 50%;
+}
+.lighter-spinner::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.lighter-dot {
+	display: block;
+	float: left;
+	background: rgba(0, 0, 0, 0.2);
+	width: 16px;
+	height: 16px;
+	margin: 2px;
+	padding: 0;
+	border-radius: 50%;
+	-webkit-animation: lighter-bounce 1.6s infinite ease-in-out;
+	-moz-animation: lighter-bounce 1.6s infinite ease-in-out;
+	animation: lighter-bounce 1.6s infinite ease-in-out;
+}
+.lighter-dot:nth-child(1) {
+	-webkit-animation-delay: -0.4s;
+	-moz-animation-delay: -0.4s;
+	animation-delay: -0.4s;
+}
+.lighter-dot:nth-child(2) {
+	-webkit-animation-delay: -0.26667s;
+	-moz-animation-delay: -0.26667s;
+	animation-delay: -0.26667s;
+}
+.lighter-dot:nth-child(3) {
+	-webkit-animation-delay: -0.13333s;
+	-moz-animation-delay: -0.13333s;
+	animation-delay: -0.13333s;
+}
+ @-webkit-keyframes lighter-bounce {
+ from, to {
+ -webkit-transform: scale(0);
+}
+ 20% {
+ -webkit-transform: scale(0);
+}
+ 50% {
+ -webkit-transform: scale(1);
+}
+ 80% {
+ -webkit-transform: scale(0);
+}
+}
+@-moz-keyframes lighter-bounce {
+ from, to {
+ -moz-transform: scale(0);
+}
+ 20% {
+ -moz-transform: scale(0);
+}
+ 50% {
+ -moz-transform: scale(1);
+}
+ 80% {
+ -moz-transform: scale(0);
+}
+}
+@keyframes lighter-bounce {
+ from, to {
+ -webkit-transform: scale(0);
+ -moz-transform: scale(0);
+ -ms-transform: scale(0);
+ -o-transform: scale(0);
+ transform: scale(0);
+}
+ 20% {
+ -webkit-transform: scale(0);
+ -moz-transform: scale(0);
+ -ms-transform: scale(0);
+ -o-transform: scale(0);
+ transform: scale(0);
+}
+ 50% {
+ -webkit-transform: scale(1);
+ -moz-transform: scale(1);
+ -ms-transform: scale(1);
+ -o-transform: scale(1);
+ transform: scale(1);
+}
+ 80% {
+ -webkit-transform: scale(0);
+ -moz-transform: scale(0);
+ -ms-transform: scale(0);
+ -o-transform: scale(0);
+ transform: scale(0);
+}
+}
+
+
+
+.new-arrival .items-in {
+    margin-bottom: 30px;
+}
+
+.popurlar_product .items-in {
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.hot-tag {
+    height: 58px;
+    width: 58px;
+    float: right;
+    position: absolute;
+    background: #af5875;
+    line-height: 58px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+.popurlar_product .items-in:hover .over-item a.btn {
+    font-size: 14px;
+    padding: 0px;
+    height: auto;
+    width: auto;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #fff;
+    background: none;
+    font-size: 10px;
+}
+
+.popurlar_product .items-in:hover .over-item a {
+    background: #fff;
+    height: 63px;
+    width: 63px;
+    line-height: 63px;
+    text-align: center;
+    color: #272727;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.stars {
+    display: inline-block;
+    width: 100%;
+    color: #ebc52d;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.btn{
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.popurlar_product .details-sec {
+    position: relative;
+    z-index: 99;
+    background: #fff;
+    text-align: center;
+}
+
+
+@media (max-width: 991px) and (min-width: 768px){
+.popurlar_product .details-sec a {
+    letter-spacing: 0px;
+}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.popurlar_product .details-sec a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    color: #272727;
+    letter-spacing: 2px;
+    font-size: 12px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) and (min-width: 768px)
+{
+.popurlar_product li {
+    width: 50%;
+}
+}
+
+/*=======================================================
+      Popurlar Product
+========================================================*/
+.popurlar_product {
+}
+.popurlar_product .items-in {
+	position: relative;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.popurlar_product .over-item {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	opacity: 0;
+	text-align: center;
+	padding-top: 48%;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	z-index: 99;
+}
+.popurlar_product .over-item ul {
+	display: none;
+}
+.popurlar_product .items-in:hover .over-item {
+	opacity: 1;
+}
+.popurlar_product .items-in:hover .over-item a {
+	background: #fff;
+	height: 63px;
+	width: 63px;
+	line-height: 63px;
+	text-align: center;
+	color: #272727;
+	font-size: 20px;
+	display: inline-block;
+}
+.popurlar_product .items-in:hover img {
+	-webkit-transition: all 250ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	-moz-transition: all 250ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	-o-transition: all 250ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	transition: all 250ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.popurlar_product .items-in:hover .over-item a.btn {
+	font-size: 14px;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	padding: 0 20px;
+	line-height: 40px;
+	color: #fff;
+	background: none;
+	font-size: 10px;
+}
+.popurlar_product .items-in:hover .over-item li {
+	display: inline-block;
+	margin-right: 1px;
+	width: auto;
+	float: none;
+}
+.popurlar_product .items-in:hover .over-item .btn:hover {
+	background: #af5875;
+	color: #fff;
+	border-color: #af5875;
+}
+.popurlar_product .items-in:hover .over-item a:hover {
+	background: #af5875;
+	color: #fff;
+}
+.popurlar_product .items-in:hover .over-item ul {
+	display: table;
+	margin: 0 auto;
+}
+.popurlar_product .details-sec {
+	position: relative;
+	z-index: 99;
+	background: #fff;
+	text-align: center;
+}
+.popurlar_product .details-sec a {
+	display: inline-block;
+	width: 100%;
+	padding: 15px 0;
+	color: #272727;
+	letter-spacing: 2px;
+	font-size: 12px;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 10px;
+}
+.popurlar_product .details-sec span {
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+.popurlar_product .owl-nav {
+	position: absolute;
+	top: -10px;
+	width: 100%;
+	text-align: center;
+}
+.popurlar_product .owl-nav:before {
+	height: 1px;
+	content: "";
+	position: absolute;
+	width: 20px;
+	margin: 0 auto;
+	left: 0px;
+	right: 0px;
+	background: #ebebeb;
+	top: 15px;
+}
+.popurlar_product .owl-nav div {
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+	border: 1px solid #ebebeb;
+	line-height: 28px;
+	text-align: center;
+	margin: 0 10px;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.popurlar_product .owl-nav div:hover {
+	background: #af5875;
+	color: #fff;
+	border-color: #af5875;
+}
+.popurlar_product li img {
+	width: 100%;
+}
+
+.popurlar_product .items-in:hover .over-item a {
+    background: #fff;
+    height: 63px;
+    width: 63px;
+    line-height: 63px;
+    text-align: center;
+    color: #272727;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.full-w {
+    display: inline-block;
+    width: 100% !important;
+}
+
+.font-14{
+    font-size:14px;
+}
+
+.pac-container {
+    z-index:100002;
+}
